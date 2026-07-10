@@ -29,7 +29,15 @@ public class BankkontoRepositoryMemory implements BankkontoRepository {
 
     @Override
     public void aktualisieren(Bankkonto bankkonto) {
+        for(int i = 0; i < bankkonten.size(); i++) {
+            Bankkonto gespeichertesKonto = bankkonten.get(i);
 
+            if(gespeichertesKonto.getKontonummer()
+                    .equals(bankkonto.getKontonummer())) {
+                bankkonten.set(i, bankkonto);
+                return;
+            }
+        }
     }
 
     @Override
