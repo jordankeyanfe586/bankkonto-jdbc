@@ -16,7 +16,7 @@ public class BankkontoService {
         boolean existiertBereits = repository.findeNachKontonummer(bankkonto.getKontonummer()).isPresent();
 
         if(existiertBereits) {
-            throw new IllegalArgumentException("Ein Konto mit diesem Kontonummer existiert beriets.");
+            throw new IllegalArgumentException("Ein Konto mit diesem Kontonummer existiert bereits.");
         }
 
         repository.speichern(bankkonto);
@@ -24,7 +24,7 @@ public class BankkontoService {
 
     public Bankkonto bankkontoFinden(String Kontonummer) {
         return repository.findeNachKontonummer(Kontonummer).orElseThrow(
-            () -> new IllegalArgumentException("Kein Bankkonto mit dieser kontonummer gefunden."));
+            () -> new IllegalArgumentException("Kein Bankkonto mit diesem kontonummer gefunden."));
     }
 
     public List<Bankkonto> alleBankkonten() {

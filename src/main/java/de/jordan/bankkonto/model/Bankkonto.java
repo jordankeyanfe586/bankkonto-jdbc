@@ -38,4 +38,11 @@ public class Bankkonto {
     public BigDecimal getKontostand() {
         return kontostand;
     }
+
+    @Override
+    public String toString(){
+        return "Bankkonto{Kontonummer = '"+kontonummer+
+            "', Kontonummer = '"+kontoinhaber+
+            "', KontoStand = "+kontostand+"}";
+    }
 }
