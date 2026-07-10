@@ -1,0 +1,25 @@
+# Maven
+target/
+
+# Java
+*.class
+*.jar
+*.war
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Datenbankdatein
+data/
+*.mv.db
+*.trace.db
+
+# Protokolldateien
+*.log
