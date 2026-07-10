@@ -13,7 +13,7 @@ public interface BankkontoRepository {
 
     List<Bankkonto> findeAlle();
     
-    void aktualisieren(Bankkonto bankonto);
+    void aktualisieren(Bankkonto bankkonto);
 
     boolean loeschenNachKontonummer(String kontonummer);
 }
