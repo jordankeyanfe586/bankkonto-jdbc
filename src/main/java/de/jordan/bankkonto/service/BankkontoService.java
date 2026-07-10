@@ -31,7 +31,7 @@ public class BankkontoService {
         return repository.findeAlle();
     }
 
-    public void kontoinhaberaender(String kontonummer, String neuerKontoinhaber) {
+    public void kontoinhaberAendern(String kontonummer, String neuerKontoinhaber) {
         Bankkonto bankkonto = bankkontoFinden(kontonummer);
         bankkonto.kontoinhaberAendern(neuerKontoinhaber);
         repository.aktualisieren(bankkonto);
