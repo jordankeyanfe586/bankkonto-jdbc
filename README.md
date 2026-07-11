@@ -10,7 +10,7 @@ Das Projekt dient zum Erlernen von:
 - SQL
 - H2-Datenbank
 - Repository-Pattern
-- automatisierten Test mit JUnit
+- automatisierten Tests mit JUnit
 
 ## Voraussetzungen
 
@@ -18,6 +18,6 @@ Das Projekt dient zum Erlernen von:
 - Maven
 - Visual Studio oder eine andere Java-IDE
 
-## Projekstatus
+## Projektstatus
 
 Das Projekt befindet sich derzeit in Entwicklung.
